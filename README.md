@@ -1,6 +1,3 @@
-# Promoter_search_bacteria
-Azotobacter chroococcum genome found in GenBank accession (CP011835.1) is used for the two promoter search techniques (Local alignment search and Statistical alignment search)  implemented here. 
-
 # Promoter Search in Bacteria
 
 This repository contains the implementation of computational methods to identify the "WWWW" promoter sequence in the genome of *Azotobacter chroococcum*, a nitrogen-fixing bacterium. The project compares two methods—local alignment and statistical alignment—for promoter discovery.
