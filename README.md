@@ -28,7 +28,7 @@ The study aims to compare the effectiveness of these methods in identifying "WWW
 
 2. Install dependencies (e.g., Biopython):
    ```bash
-   pip install -r requirements.txt
+   pip3 install -r biopython
    ```
 
 3. Run the script:
