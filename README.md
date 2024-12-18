@@ -12,29 +12,6 @@ In this project:
 
 The study aims to compare the effectiveness of these methods in identifying "WWWW" promoters in the *A. chroococcum* genome, analyzing promoter percentages and positional distributions.
 
-## Files in the Repository
-
-### 1. `extract_genes.py`
-This script:
-- Reads the genome assembly and loci files in FASTA (.fna) and .gtf formats.
-- Extracts gene sequences, selecting 100 base pairs upstream and 3 base pairs downstream of each gene.
-
-### 2. `local_search.py`
-Implements the local alignment search method:
-- Converts adenine (A) and thymine (T) into "W" to represent the "WWWW" motif.
-- Searches for promoters using a custom scoring matrix and traceback algorithm.
-- Outputs the percentage of genes with potential promoters and their positional distributions.
-
-### 3. `statistical_alignment.py`
-Implements the statistical alignment method:
-- Extracts upstream sequences and calculates a position probability matrix (PPM).
-- Uses the PPM to calculate alignment scores and identifies potential promoters based on a normalized score threshold.
-- Outputs promoter distributions.
-
-### 4. `compare_methods.py`
-- Compares the percentage of promoters detected and position distributions from both methods.
-- Provides insights into the advantages and limitations of each approach.
-
 ## Key Results
 
 - **Percentage of Promoters Detected**: Both methods identified promoters in 60.48% of sequences.
@@ -54,26 +31,11 @@ Implements the statistical alignment method:
    pip install -r requirements.txt
    ```
 
-3. Run the scripts:
-   - Extract genes:
-     ```bash
-     python extract_genes.py
-     ```
-   - Perform local alignment search:
-     ```bash
-     python local_search.py
-     ```
-   - Perform statistical alignment:
-     ```bash
-     python statistical_alignment.py
-     ```
-   - Compare methods:
-     ```bash
-     python compare_methods.py
-     ```
+3. Run the script:
+   - Promoter_search.ipynb
 
 ## Dependencies
-- Python 3.7+
+- Python 3
 - Biopython (for sequence handling)
 - Matplotlib (for visualizing distributions)
 - NumPy
